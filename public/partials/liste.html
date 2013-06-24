@@ -1,0 +1,20 @@
+<div style="float:left;">
+  <label>Recherche : </label>
+  <input type="text" ng-model="recherche">
+  <p>Votre recherche est "{{ recherche }}"</p>
+
+  <table>
+    <tr ng-repeat="commentaire in commentaires | filter:recherche">
+      <td><a href="#/liste_com/{{ commentaire.pseudo }}">{{ commentaire.pseudo }}</a></td>
+      <td>{{ commentaire.contenu }}</td>
+      <td>{{ commentaire.actif }}</td>
+      <td><a href="" ng-click="valider($index)">Valider</a></td>
+    </tr>
+  </table>
+
+  <form ng-submit="ajouter()">
+    <input type="text" ng-model="pseudo">
+    <textarea ng-model="contenu"></textarea>
+    <input type="submit" value="Ajouter" />
+  </form>
+</div>

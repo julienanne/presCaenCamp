@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pseudo: MyString
+  contenu: MyText
+  actif: false
+
+two:
+  pseudo: MyString
+  contenu: MyText
+  actif: true
+
+three:
+  pseudo: Toto
+  contenu: Commentaire de test 1
+  actif: true
+
+four:
+  pseudo: Toto
+  contenu: Commentaire de test 2
+  actif: false
